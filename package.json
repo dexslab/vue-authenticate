@@ -9,17 +9,33 @@
     "dev": "concurrently --kill-others \"node-dev ./example/server.js\" \"gulp dev\"",
     "build": "node build/build.js && cp ./dist/vue-authenticate.js ./example/"
   },
-  "keywords": ["vue", "vue.js", "vuejs", "json", "jwt", "token", "auth", "authentication", "oauth", "oauth1", "oauth2"],
+  "keywords": [
+    "vue",
+    "vue.js",
+    "vuejs",
+    "json",
+    "jwt",
+    "token",
+    "auth",
+    "authentication",
+    "oauth",
+    "oauth1",
+    "oauth2"
+  ],
   "author": {
     "name": "Davor Grubelic",
     "email": "davor.grubelic@gmail.com",
     "url": "https://dgrubelic.me"
   },
+  "typings": "types/index.d.ts",
+  "files": [
+    "types/*.d.ts",
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dgrubelic/vue-authenticate.git"
   },
-  "files": ["dist"],
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.4.3",
@@ -55,8 +71,8 @@
     "webpack-dev-server": "^3.3.1"
   },
   "peerDependencies": {
-    "acorn-dynamic-import": "^4.0.0",
     "acorn": "^6.0.0",
+    "acorn-dynamic-import": "^4.0.0",
     "ajv": "^6.9.1"
   },
   "tags": [
